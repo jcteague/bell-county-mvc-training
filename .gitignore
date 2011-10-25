@@ -1,0 +1,47 @@
+syntax: glob
+build/
+log/
+deploy/deployment_psake/deployment/web/app/Scripts
+deploy/deployment_psake/deployment/web/app/Views
+deploy/deployment_psake/deployment/web/app/bin
+deploy/deployment_psake/deployment/web/app/Content
+deploy/deployment_psake/deployment/web/app/Web.config
+deploy/deployment_psake/deployment/web/app/Global.asax
+
+src/WebApp/Logs/
+src/PropertyRegistration.Web.UI/logs/
+src/PropertyRegistration.Web.UI/App_Data
+deploy/uat
+deploy/production
+*.suo
+*.user
+bin
+Bin
+!/bin
+obj
+*ReSharper*
+*.csproj.user
+*.resharper.user
+*.suo
+*.cache
+TestResult.xml
+*.trx
+glob:svninfo.xml
+*.log
+*.orig
+*.swp
+*.idea
+*.dotCover
+application.txt
+*.*~
+
+#-----Begin Raymi's Custom Ignore ----#
+track.bat
+push.bat
+commit.bat
+pull.bat
+status.bat
+mine
+test.bat
+.git
+#-----End Raymi's Custom Ignore ----#
