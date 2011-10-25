@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="7D0B16E5-E030-4FE7-B593-2864308CEBFE" ModuleId="mvc-training" />
+  <Module PersistentId="E53F73BC-3B95-4957-B1C8-7DF1012931BD" ModuleId="UnitTests" />
 </Modules>
