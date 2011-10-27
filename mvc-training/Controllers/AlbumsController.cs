@@ -20,7 +20,18 @@ namespace MvcTraining.Controllers
         }
         public ActionResult Index()
         {
-            var model = albumRepository.Get().Select(a => new AlbumView {Name = a.Name, ArtistName = a.Artist.Name});
+            var model = albumRepository.Get().Select(a => new AlbumListView {Name = a.Name, ArtistName = a.Artist.Name});
+            return View(model);
+        }
+        public ActionResult Show(string name)
+        {
+            var album = albumRepository.Get().SingleOrDefault(a => a.Name.Equals(name,StringComparison.InvariantCultureIgnoreCase));
+            if (album == null) return View();
+            var model =new AlbumView(){
+                    Name = album.Name, 
+                    ArtistName = album.Artist.Name, 
+                    SongNames = album.Songs.Select(s => s.Name)
+            };
             return View(model);
         }
 
