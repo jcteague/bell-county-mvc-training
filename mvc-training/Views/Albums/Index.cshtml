@@ -1,0 +1,17 @@
+﻿@using MvcTraining.Models
+@model IEnumerable<AlbumView>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<ul>
+  @foreach(var a in Model)
+  {
+      <li>
+        <span class="artist-name">@a.ArtistName</span>
+        <span class="album-name">@a.Name</span>
+      </li>
+  }
+</ul>

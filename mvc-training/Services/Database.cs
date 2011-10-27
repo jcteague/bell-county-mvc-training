@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using mvc_training.Domain;
+using System.Linq;
 
 namespace MvcTraining.Services
 {
@@ -35,8 +36,9 @@ namespace MvcTraining.Services
             var s14 = new Song {Id = 1, Artist = beatles, Album = abbey_road, Name = "Medley"};
             var s15 = new Song {Id = 1, Artist = beatles, Album = abbey_road, Name = "Her Majesty"};
             abbey_road.Songs = new List<Song> {s7, s8, s9, s10, s10, s11, s12, s13, s14, s15};
-
-
+            Artists = new List<Artist> {beatles, aerosmith};
+            Albums = new List<Album> {yellow_submarine, abbey_road};
+            Songs = Albums.SelectMany(n => n.Songs).ToList();
         } 
     }
 }
