@@ -343,3 +343,14 @@ div#title
 {
     width: 6em;
 }
+ul#album-list {
+  list-style: none;
+  
+}
+.artist-name {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1em;
+  display: inline-block;
+  width: 125px;
+}
