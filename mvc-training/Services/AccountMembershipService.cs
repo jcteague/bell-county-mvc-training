@@ -1,7 +1,7 @@
 using System;
 using System.Web.Security;
 
-namespace mvc_training.Services
+namespace MvcTraining.Services
 {
     public class AccountMembershipService : IMembershipService {
         private readonly MembershipProvider _provider;

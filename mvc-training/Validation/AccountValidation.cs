@@ -1,6 +1,6 @@
 using System.Web.Security;
 
-namespace mvc_training.Validation
+namespace MvcTraining.Validation
 {
     public static class AccountValidation {
         public static string ErrorCodeToString(MembershipCreateStatus createStatus) {

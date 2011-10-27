@@ -1,6 +1,6 @@
 using System.Web.Security;
 
-namespace mvc_training.Services
+namespace MvcTraining.Services
 {
     public interface IMembershipService {
         int MinPasswordLength { get; }
