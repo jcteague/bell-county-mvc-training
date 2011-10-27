@@ -1,6 +1,15 @@
 syntax: glob
 *.suo
 *.user
+_ReSharper.*
+*.csproj.user
+*.[Rr]e[Ss]harper.user
+*.resharper
+*.suo
+*.cache
+*~
+*.swp
+
 bin
 Bin
 !/bin
