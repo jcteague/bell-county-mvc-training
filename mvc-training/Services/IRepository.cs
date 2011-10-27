@@ -25,6 +25,18 @@ namespace MvcTraining.Services
             Database.Songs.Add(item);
         }
     }
+    public class AlbumRepository :IRepository<Album>
+    {
+        public IEnumerable<Album> Get()
+        {
+            return Database.Albums;
+        }
+
+        public void Save(Album item)
+        {
+            Database.Albums.Add(item);
+        }
+    }
 
 
 
