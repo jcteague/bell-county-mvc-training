@@ -1,5 +1,0 @@
-E:\code\mvc-training\mvc-training\bin\mvc-training.dll
-E:\code\mvc-training\mvc-training\bin\mvc-training.pdb
-E:\code\mvc-training\mvc-training\obj\Debug\ResolveAssemblyReference.cache
-E:\code\mvc-training\mvc-training\obj\Debug\mvc-training.dll
-E:\code\mvc-training\mvc-training\obj\Debug\mvc-training.pdb
